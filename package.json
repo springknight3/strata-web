@@ -1,0 +1,11 @@
+{
+  "name": "stratalauncher-docs-monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix website run dev",
+    "build": "npm --prefix website run build",
+    "preview": "npm --prefix website run preview",
+    "lint": "npm --prefix website run lint",
+    "typecheck": "npm --prefix website run typecheck"
+  }
+}

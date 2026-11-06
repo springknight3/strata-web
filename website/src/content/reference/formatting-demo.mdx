@@ -1,0 +1,74 @@
+---
+title: Formatting Demo
+group: reference
+order: 1
+description: Demonstration of tables, syntax highlighting across languages, and callouts.
+---
+
+This page demonstrates the styling capabilities of the StrataLauncher documentation shell, including code blocks, GFM tables, and callouts.
+
+## Callout Variations
+
+Here is an example of each callout component:
+
+<Note title="Documentation Note">
+  This is an informative note callout highlighting neutral background context or additional tips.
+</Note>
+
+<Tip title="Pro Tip">
+  Tips provide recommendations for enhanced performance, workflow speed, or best practices.
+</Tip>
+
+<Warning title="System Warning">
+  Warnings alert users to potential configuration errors, security risks, or breaking changes.
+</Warning>
+
+## Code Block Syntax Highlighting
+
+Below are code blocks demonstrating dual-theme highlighting via Shiki with copy buttons and language labels.
+
+### Bash Example
+
+```bash
+# Launch instance via headless CLI flag
+stratalauncher --instance "Modded 1.21.1" --quick-play "play.example.com:25565"
+```
+
+### Properties Example
+
+```properties
+# server.properties configuration snippet
+server-port=25565
+enable-rcon=false
+gamemode=survival
+difficulty=normal
+online-mode=true
+motd=A StrataLauncher Dedicated Server
+```
+
+### JSON Example
+
+```json
+{
+  "instanceName": "Strata Speedrun",
+  "minecraftVersion": "1.16.1",
+  "loader": {
+    "type": "fabric",
+    "version": "0.15.11"
+  },
+  "javaArguments": ["-Xmx4G", "-XX:+UseG1GC"]
+}
+```
+
+## GFM Markdown Table
+
+The table below verifies GitHub-Flavored Markdown table parsing and styling:
+
+| Setting Key | Default Value | Description |
+| :--- | :--- | :--- |
+| `maxMemoryMb` | `4096` | Maximum heap allocation allocated to the JVM |
+| `enableVsync` | `true` | Matches rendering refresh rate to primary monitor |
+| `customJavaPath` | `null` | Optional override path to a custom Java installation |
+| `reducedMotion` | `false` | Disables non-essential launcher interface animations |
+
+All table borders, headers, and rows adapt seamlessly across light and dark themes.

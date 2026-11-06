@@ -1,0 +1,220 @@
+/**
+ * DESIGN TOKENS FOR STRATALAUNCHER DOCUMENTATION
+ * Sourced directly from the launcher application repository (Java/JavaFX UI & AtlantaFX 2.0.1 theme):
+ *
+ * COLOR SOURCES:
+ * - --color-bg (Dark): #111827 (minecraft-launcher/src/main/resources/net/stratalauncher/ui/styles-dark.css:81)
+ * - --color-bg (Light): #ffffff (minecraft-launcher/src/main/resources/net/stratalauncher/ui/styles-light.css:81, AtlantaFX PrimerLight:58)
+ * - --color-bg-gradient-start (Dark): #111827 (styles-dark.css:2, styles.css:34)
+ * - --color-bg-gradient-end (Dark): #1e1b4b (styles-dark.css:2, styles.css:34)
+ * - --color-bg-gradient-start (Light): #ffffff (guessed for clean web documentation canvas)
+ * - --color-bg-gradient-end (Light): #f8fafc (guessed, based on AtlantaFX -color-bg-subtle: #f6f8fa)
+ * - --color-surface (Dark): #1e293b (styles-dark.css:88, styles-dark.css:172, styles-dark.css:177)
+ * - --color-surface (Light): #ffffff (styles-light.css:88, AtlantaFX PrimerLight:58)
+ * - --color-surface-subtle (Dark): rgba(15, 23, 42, 0.6) (styles-dark.css:62)
+ * - --color-surface-subtle (Light): rgba(255, 255, 255, 0.78) (styles-light.css:62)
+ * - --color-surface-elevated (Dark): rgba(15, 23, 42, 0.9) (styles-dark.css:10)
+ * - --color-surface-elevated (Light): rgba(255, 255, 255, 0.92) (styles-light.css:10)
+ * - --color-surface-hover (Dark): #293a52 (styles-dark.css:98)
+ * - --color-surface-hover (Light): #eff6ff (styles-light.css:98)
+ * - --color-border (Dark): rgba(148, 163, 184, 0.2) (styles-dark.css:11)
+ * - --color-border (Light): #cbd5e1 (styles-light.css:11)
+ * - --color-border-subtle (Dark): rgba(148, 163, 184, 0.18) (styles-dark.css:63)
+ * - --color-border-subtle (Light): rgba(100, 116, 139, 0.26) (styles-light.css:30)
+ * - --color-border-strong (Dark): #334155 (styles-dark.css:83)
+ * - --color-border-strong (Light): #94a3b8 (styles-light.css:20)
+ * - --color-text (Dark): #e2e8f0 (styles-dark.css:6, styles-dark.css:19)
+ * - --color-text (Light): #1e293b (styles-light.css:6, styles-light.css:19)
+ * - --color-text-strong (Dark): #f8fafc (styles-dark.css:15, styles-dark.css:94)
+ * - --color-text-strong (Light): #0f172a (styles-light.css:15, styles-light.css:94)
+ * - --color-text-muted (Dark): #cbd5e1 (styles-dark.css:66)
+ * - --color-text-muted (Light): #475569 (styles-light.css:66)
+ * - --color-text-subtle (Dark): #8b949e (AtlantaFX PrimerDark:56 -color-fg-muted)
+ * - --color-text-subtle (Light): #6e7781 (AtlantaFX PrimerLight:56 -color-fg-subtle)
+ * - --color-accent (Dark): #2563eb (styles-dark.css:24, styles-dark.css:42)
+ * - --color-accent (Light): #2563eb (styles-light.css:24, styles-light.css:42)
+ * - --color-accent-gradient-start (Dark/Light): #2563eb (styles-dark.css:42, styles-light.css:42)
+ * - --color-accent-gradient-end (Dark/Light): #1d4ed8 (styles-dark.css:42, styles-light.css:42)
+ * - --color-accent-hover (Dark): #60a5fa (styles-dark.css:135)
+ * - --color-accent-hover (Light): #3b82f6 (styles-light.css:135)
+ * - --color-accent-subtle (Dark): rgba(59, 130, 246, 0.16) (styles-dark.css:38)
+ * - --color-accent-subtle (Light): #dbeafe (styles-light.css:38)
+ * - --color-accent-fg (Dark): #dbeafe (styles-dark.css:39)
+ * - --color-accent-fg (Light): #1d4ed8 (styles-light.css:39)
+ * - --color-accent-selected (Dark): #334e75 (styles-dark.css:93, styles-dark.css:144)
+ * - --color-accent-selected (Light): #dbeafe (styles-light.css:93)
+ *
+ * CALLOUT & STATUS COLORS:
+ * - Warning Bg (Dark): rgba(251, 191, 36, 0.12) (styles-dark.css:47)
+ * - Warning Border (Dark): rgba(251, 191, 36, 0.35) (styles-dark.css:48)
+ * - Warning Text (Dark): #fde68a (styles-dark.css:52)
+ * - Warning Bg (Light): #fef3c7 (styles-light.css:47)
+ * - Warning Border (Light): #fbbf24 (styles-light.css:48)
+ * - Warning Text (Light): #78350f (styles-light.css:52)
+ * - Tip/Success Bg (Dark): rgba(34, 197, 94, 0.2) (styles-dark.css:70)
+ * - Tip/Success Border (Dark): rgba(34, 197, 94, 0.35) (guessed based on styles-dark.css:70)
+ * - Tip/Success Text (Dark): #bbf7d0 (styles-dark.css:71)
+ * - Tip/Success Bg (Light): #dcfce7 (styles-light.css:70)
+ * - Tip/Success Border (Light): #86efac (guessed based on styles-light.css:70)
+ * - Tip/Success Text (Light): #166534 (styles-light.css:71)
+ * - Note/Info Bg (Dark): rgba(59, 130, 246, 0.15) (guessed based on styles-dark.css:38)
+ * - Note/Info Border (Dark): rgba(96, 165, 250, 0.35) (guessed based on styles-dark.css:135)
+ * - Note/Info Text (Dark): #93c5fd (guessed based on styles-dark.css:122)
+ * - Note/Info Bg (Light): #eff6ff (styles-light.css:98)
+ * - Note/Info Border (Light): #93c5fd (styles-light.css:122)
+ * - Note/Info Text (Light): #1e40af (guessed based on styles-light.css:39)
+ *
+ * CORNER RADIUS SCALE:
+ * - --radius-sm: 8px (styles.css:108)
+ * - --radius-md: 10px (styles.css:55)
+ * - --radius-lg: 12px (styles.css:122, styles.css:158)
+ * - --radius-xl: 14px (styles.css:27)
+ * - --radius-full: 9999px (styles.css:84)
+ *
+ * SPACING SCALE:
+ * - --space-1: 4px (guessed)
+ * - --space-2: 8px (styles.css:56)
+ * - --space-2-5: 10px (styles.css:48)
+ * - --space-3: 12px (styles.css:43)
+ * - --space-3-5: 14px (styles.css:44)
+ * - --space-4: 16px (styles.css:195)
+ * - --space-6: 24px (styles.css:201)
+ * - --space-8: 32px (guessed)
+ *
+ * SHADOWS:
+ * - (styles.css:327 disabled effects with -fx-effect: none; AtlantaFX drop shadows below are adapted for web)
+ * - Shadows (Dark): derived from AtlantaFX PrimerDark -color-shadow-default: #010409 (guessed based on primer-dark.css:66)
+ * - Shadows (Light): derived from AtlantaFX PrimerLight -color-shadow-default: #d0d7de (guessed based on primer-light.css:66)
+ *
+ * MOTION & CURVES:
+ * - Motion durations: fast 220ms, normal 420ms, slow 680ms (MotionConstants.java:9-11)
+ * - Standard curve: 0.25, 0.1, 0.25, 1 (CURVES.md:1, MotionConstants.java:12)
+ * - Emphasis curve: 0.22, 1, 0.36, 1 (CURVES.md:2, MotionConstants.java:13)
+ * - Express curve: 0.2, 0.8, 0.2, 1 (CURVES.md:3, MotionConstants.java:14)
+ *
+ * TYPOGRAPHY:
+ * - UI Font: DM Sans (styles.css:5, UiTypography.java:13, AGENTS.md)
+ * - Headings: Outfit (styles.css:118, UiTypography.java:14, AGENTS.md)
+ * - Code: JetBrains Mono (styles.css:112, UiTypography.java:15, AGENTS.md)
+ */
+
+:root {
+  /* Common scales */
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 14px;
+  --radius-full: 9999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-2-5: 10px;
+  --space-3: 12px;
+  --space-3-5: 14px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  --duration-fast: 220ms;
+  --duration-normal: 420ms;
+  --duration-slow: 680ms;
+
+  --ease-standard: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-emphasis: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-express: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Light Theme (Default fallback in root) */
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8fafc;
+  --color-bg-gradient-start: #ffffff;
+  --color-bg-gradient-end: #eff6ff;
+
+  --color-surface: #ffffff;
+  --color-surface-subtle: rgba(255, 255, 255, 0.78);
+  --color-surface-elevated: rgba(255, 255, 255, 0.92);
+  --color-surface-hover: #eff6ff;
+
+  --color-border: #cbd5e1;
+  --color-border-subtle: rgba(100, 116, 139, 0.26);
+  --color-border-strong: #94a3b8;
+
+  --color-text: #1e293b;
+  --color-text-strong: #0f172a;
+  --color-text-muted: #475569;
+  --color-text-subtle: #6e7781;
+
+  --color-accent: #2563eb;
+  --color-accent-gradient-start: #2563eb;
+  --color-accent-gradient-end: #1d4ed8;
+  --color-accent-hover: #3b82f6;
+  --color-accent-subtle: #dbeafe;
+  --color-accent-fg: #1d4ed8;
+  --color-accent-selected: #dbeafe;
+
+  --color-callout-note-bg: #eff6ff;
+  --color-callout-note-border: #93c5fd;
+  --color-callout-note-text: #1e40af;
+
+  --color-callout-tip-bg: #dcfce7;
+  --color-callout-tip-border: #86efac;
+  --color-callout-tip-text: #166534;
+
+  --color-callout-warning-bg: #fef3c7;
+  --color-callout-warning-border: #fbbf24;
+  --color-callout-warning-text: #78350f;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
+}
+
+:root[data-theme="dark"],
+html.dark {
+  /* Dark Theme */
+  --color-bg: #111827;
+  --color-bg-alt: #0d1117;
+  --color-bg-gradient-start: #111827;
+  --color-bg-gradient-end: #1e1b4b;
+
+  --color-surface: #1e293b;
+  --color-surface-subtle: rgba(15, 23, 42, 0.6);
+  --color-surface-elevated: rgba(15, 23, 42, 0.9);
+  --color-surface-hover: #293a52;
+
+  --color-border: rgba(148, 163, 184, 0.2);
+  --color-border-subtle: rgba(148, 163, 184, 0.18);
+  --color-border-strong: #334155;
+
+  --color-text: #e2e8f0;
+  --color-text-strong: #f8fafc;
+  --color-text-muted: #cbd5e1;
+  --color-text-subtle: #8b949e;
+
+  --color-accent: #2563eb;
+  --color-accent-gradient-start: #2563eb;
+  --color-accent-gradient-end: #1d4ed8;
+  --color-accent-hover: #60a5fa;
+  --color-accent-subtle: rgba(59, 130, 246, 0.16);
+  --color-accent-fg: #dbeafe;
+  --color-accent-selected: #334e75;
+
+  --color-callout-note-bg: rgba(59, 130, 246, 0.15);
+  --color-callout-note-border: rgba(96, 165, 250, 0.35);
+  --color-callout-note-text: #93c5fd;
+
+  --color-callout-tip-bg: rgba(34, 197, 94, 0.2);
+  --color-callout-tip-border: rgba(34, 197, 94, 0.35);
+  --color-callout-tip-text: #bbf7d0;
+
+  --color-callout-warning-bg: rgba(251, 191, 36, 0.12);
+  --color-callout-warning-border: rgba(251, 191, 36, 0.35);
+  --color-callout-warning-text: #fde68a;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.45), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.55), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
+}

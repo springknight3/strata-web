@@ -1,0 +1,35 @@
+[
+  {
+    "id": "getting-started/introduction",
+    "group": "getting-started",
+    "groupTitle": "Getting Started",
+    "slug": "introduction",
+    "title": "Introduction",
+    "order": 1,
+    "description": "Welcome to StrataLauncher, a lightweight custom Minecraft launcher.",
+    "path": "/docs/getting-started/introduction",
+    "filePath": "/src/content/getting-started/introduction.mdx"
+  },
+  {
+    "id": "reference/formatting-demo",
+    "group": "reference",
+    "groupTitle": "Reference",
+    "slug": "formatting-demo",
+    "title": "Formatting Demo",
+    "order": 1,
+    "description": "Demonstration of tables, syntax highlighting across languages, and callouts.",
+    "path": "/docs/reference/formatting-demo",
+    "filePath": "/src/content/reference/formatting-demo.mdx"
+  },
+  {
+    "id": "servers/network-access",
+    "group": "servers",
+    "groupTitle": "Servers",
+    "slug": "network-access",
+    "title": "Network Access & Server Hosting",
+    "order": 1,
+    "description": "Essential guidelines for hosting LAN games, configuring firewalls, and managing remote connections.",
+    "path": "/docs/servers/network-access",
+    "filePath": "/src/content/servers/network-access.mdx"
+  }
+]

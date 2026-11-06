@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>/downloads</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>/licenses</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>/docs/getting-started/introduction</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>/docs/reference/formatting-demo</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>/docs/servers/network-access</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>

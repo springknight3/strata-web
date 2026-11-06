@@ -1,0 +1,44 @@
+---
+title: Network Access & Server Hosting
+group: servers
+order: 1
+description: Essential guidelines for hosting LAN games, configuring firewalls, and managing remote connections.
+---
+
+When configuring a Minecraft server or connecting with friends in StrataLauncher, appropriate network configurations ensure reliable and secure gameplay.
+
+## LAN vs Public Hosting
+
+Local Area Network (LAN) games broadcast automatically across your immediate local subnet without port forwarding.
+
+```bash
+# Example test ping across local subnet
+ping 192.168.1.100
+```
+
+Public hosting requires exposing a port (default `25565`) to the WAN or utilizing an encrypted tunneling service.
+
+<Tip title="LAN Broadcast Tip">
+  Ensure all players on a local network are connected to the same wireless SSID or switch before attempting direct IP connections.
+</Tip>
+
+## Firewall Configuration
+
+Host operating systems typically block incoming connections on port `25565` by default.
+
+```bash
+# Allowing Minecraft server port on Linux with UFW
+sudo ufw allow 25565/tcp comment 'Minecraft Server'
+```
+
+On Windows and macOS, verify that the Java runtime or launcher executable is granted permission through the system defender firewall.
+
+## Connection Security
+
+When opening server ports to the wider Internet, security considerations must be observed.
+
+<Warning title="Security Advisory">
+  Never share your public IP address publicly without protection. Use whitelisting and enforce strong online-mode authentication in your server configuration.
+</Warning>
+
+Always keep your instance mods and server jars updated to the latest stable versions to protect against known exploits.
